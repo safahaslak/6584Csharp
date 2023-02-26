@@ -11,7 +11,7 @@ namespace Ders08Classes
     {
         string kurucuMetot; //başında erişim belirteci yazmazsak, sadece bulunduğu süslü parantez içinden erişebiliriz.
         public SınıftaMetotKullanimi() // klavyeden ctor yazılıp iki kez tab'a basıldığı zaman burası oluşur.
-        {
+        {                              // public'de bir erişim belirtecidir.
             kurucuMetot = "Sınıflarda kurucu metot (constructor) sistemi vardır ve sınıftan new ile bir nesne oluşturduğumuzda ilk önce bu metot çalışır!";
             Console.WriteLine(kurucuMetot);
         } //Eğer ihtiyacımız olursa kurucu metot kullanıyoruz.

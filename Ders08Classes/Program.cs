@@ -116,6 +116,37 @@ namespace MyApp // Note: actual namespace depends on the project name.
             Console.WriteLine("Kategori : " + kategori.KategoriAdi);
             Console.WriteLine("Kategori : " + kategori2.KategoriAdi);
             Console.WriteLine("Kategori : " + kategori3.KategoriAdi);
+
+            SınıftaMetotKullanimi metotKullanimi = new();
+            var sonuc = metotKullanimi.LoginKontrol("admin", "1234");
+            if (sonuc==true)
+            {
+                Console.WriteLine("Giriş Başarılı!");
+            }
+            else Console.WriteLine("Giriş Başarısız!");
+
+
+            Urun urun = new()
+            {
+                Adi = "Klavye" , Fiyati = 249 , urunAciklamasi = "RGB Işıklı" , Id= 1
+            };
+            Urun mouse = new()
+            {
+                Adi = "Klavye", Fiyati = 199 , urunAciklamasi = "Kablolu"
+                
+               
+            };
+            Console.WriteLine("Urun Bilgileri : ");
+            Console.WriteLine($"Ürün Adı : {urun.Adi}");
+            Console.WriteLine($"Ürün Fiyatı : {urun.Fiyati}");
+            Console.WriteLine($"Ürün Açıklaması : {urun.urunAciklamasi}");
+            Console.WriteLine();
+            Console.WriteLine("Ürün Bilgileri : ");
+            Console.WriteLine($"Ürün Adı : {mouse.Adi}");
+            Console.WriteLine($"Ürün Fİyatı : {mouse.Fiyati}");
+            Console.WriteLine($"Ürün Açıklaması : {mouse.urunAciklamasi}");
+
+
         }   //main metodunun bitişi
 class Ev // Sınıf (Class) Tanımlama 
         {
