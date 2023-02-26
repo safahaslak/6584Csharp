@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Ders08Classes
 {
-    internal class SınıftaMetotKullanimi //internal = erişim belirteci.
+    public class SınıftaMetotKullanimi //internal = erişim belirteci.
     {
         string kurucuMetot; //başında erişim belirteci yazmazsak, sadece bulunduğu süslü parantez içinden erişebiliriz.
         public SınıftaMetotKullanimi() // klavyeden ctor yazılıp iki kez tab'a basıldığı zaman burası oluşur.
@@ -15,7 +15,7 @@ namespace Ders08Classes
             kurucuMetot = "Sınıflarda kurucu metot (constructor) sistemi vardır ve sınıftan new ile bir nesne oluşturduğumuzda ilk önce bu metot çalışır!";
             Console.WriteLine(kurucuMetot);
         } //Eğer ihtiyacımız olursa kurucu metot kullanıyoruz.
-        internal bool LoginKontrol(string kullanici, string sifre) //bir metot bu şekilde class içinde tanımlanabilir.
+        public bool LoginKontrol(string kullanici, string sifre) //bir metot bu şekilde class içinde tanımlanabilir.
         {
             if (kullanici == "admin" && sifre == "123456")
             {

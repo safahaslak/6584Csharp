@@ -144,7 +144,7 @@ namespace MyApp // Note: actual namespace depends on the project name.
             Console.WriteLine("Ürün Bilgileri : ");
             Console.WriteLine($"Ürün Adı : {mouse.Adi}");
             Console.WriteLine($"Ürün Fİyatı : {mouse.Fiyati}");
-            Console.WriteLine($"Ürün Açıklaması : {mouse.urunAciklamasi}");
+            Console.WriteLine($"Ürün Açıklaması : {mouse.urunAciklamasi}"); 
 
 
         }   //main metodunun bitişi
