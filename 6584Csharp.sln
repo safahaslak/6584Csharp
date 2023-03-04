@@ -19,9 +19,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ders07Metotlar", "Ders07Met
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ders08Classes", "Ders08Classes\Ders08Classes.csproj", "{7F2D3D26-E661-4384-984D-CFED9C15F3BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ders09ErisimBelirleyiciler", "Ders09ErisimBelirleyiciler\Ders09ErisimBelirleyiciler.csproj", "{CB0D840F-AA18-4063-BBD9-E1B1628B041F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ders09ErisimBelirleyiciler", "Ders09ErisimBelirleyiciler\Ders09ErisimBelirleyiciler.csproj", "{CB0D840F-AA18-4063-BBD9-E1B1628B041F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ders10OzgenlerProperties", "Ders10OzgenlerProperties\Ders10OzgenlerProperties.csproj", "{D4287CE2-0585-4D26-9C1D-375E95BDFE7E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ders10OzgenlerProperties", "Ders10OzgenlerProperties\Ders10OzgenlerProperties.csproj", "{D4287CE2-0585-4D26-9C1D-375E95BDFE7E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ders11YapilarStruct", "Ders11YapilarStruct\Ders11YapilarStruct.csproj", "{9CE7029D-F9AC-4002-B7B9-5C06DF089B52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ders12StringSinifi", "Ders12StringSinifi\Ders12StringSinifi.csproj", "{01518DA7-4F13-46BD-8929-2325E847CA1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ders13Enumlar", "Ders13Enumlar\Ders13Enumlar.csproj", "{6744A2B0-E213-4759-995F-A9691A93BADB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ders14KalitimInheritance", "Ders14KalitimInheritance\Ders14KalitimInheritance.csproj", "{A46B53E8-24BC-4F60-A03B-65F3033A991E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ders15KapsullemeEncapsulation", "Ders15KapsullemeEncapsulation\Ders15KapsullemeEncapsulation.csproj", "{CCF5EA30-E136-44B2-94CF-77327970CBBA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +79,26 @@ Global
 		{D4287CE2-0585-4D26-9C1D-375E95BDFE7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4287CE2-0585-4D26-9C1D-375E95BDFE7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4287CE2-0585-4D26-9C1D-375E95BDFE7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CE7029D-F9AC-4002-B7B9-5C06DF089B52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CE7029D-F9AC-4002-B7B9-5C06DF089B52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CE7029D-F9AC-4002-B7B9-5C06DF089B52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CE7029D-F9AC-4002-B7B9-5C06DF089B52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01518DA7-4F13-46BD-8929-2325E847CA1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01518DA7-4F13-46BD-8929-2325E847CA1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01518DA7-4F13-46BD-8929-2325E847CA1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01518DA7-4F13-46BD-8929-2325E847CA1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6744A2B0-E213-4759-995F-A9691A93BADB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6744A2B0-E213-4759-995F-A9691A93BADB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6744A2B0-E213-4759-995F-A9691A93BADB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6744A2B0-E213-4759-995F-A9691A93BADB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A46B53E8-24BC-4F60-A03B-65F3033A991E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A46B53E8-24BC-4F60-A03B-65F3033A991E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A46B53E8-24BC-4F60-A03B-65F3033A991E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A46B53E8-24BC-4F60-A03B-65F3033A991E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCF5EA30-E136-44B2-94CF-77327970CBBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCF5EA30-E136-44B2-94CF-77327970CBBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCF5EA30-E136-44B2-94CF-77327970CBBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCF5EA30-E136-44B2-94CF-77327970CBBA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
