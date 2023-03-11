@@ -75,6 +75,7 @@ namespace WindowsForms
         }
         private void UrunEkle_Load(object sender, EventArgs e) // Formdaki herhangi bir boş alana çift click yaparak load eventi oluşturulabilir.
         {
+            //
             // Form yüklenirken domainUpDown1 e for un içindeki verileri ekle.
             for (int i = 0; i < 50; i++)
             {
