@@ -33,17 +33,24 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ders14KalitimInheritance", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ders15KapsullemeEncapsulation", "Ders15KapsullemeEncapsulation\Ders15KapsullemeEncapsulation.csproj", "{CCF5EA30-E136-44B2-94CF-77327970CBBA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ders16InterfacesArayuzler", "Ders16InterfacesArayuzler\Ders16InterfacesArayuzler.csproj", "{FBCCC501-3707-4D75-8F58-A87B01F7F3BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ders16InterfacesArayuzler", "Ders16InterfacesArayuzler\Ders16InterfacesArayuzler.csproj", "{FBCCC501-3707-4D75-8F58-A87B01F7F3BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ders17AbstractSiniflar", "Ders17AbstractSiniflar\Ders17AbstractSiniflar.csproj", "{3725D97C-0540-4C9E-AE4B-31527CE41565}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ders17AbstractSiniflar", "Ders17AbstractSiniflar\Ders17AbstractSiniflar.csproj", "{3725D97C-0540-4C9E-AE4B-31527CE41565}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ders18Koleksiyonlar", "Ders18Koleksiyonlar\Ders18Koleksiyonlar.csproj", "{D14D91B0-E62D-44B9-9A0B-DEF26428E191}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ders18Koleksiyonlar", "Ders18Koleksiyonlar\Ders18Koleksiyonlar.csproj", "{D14D91B0-E62D-44B9-9A0B-DEF26428E191}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ders19ClassLibraryKullanimi", "Ders19ClassLibraryKullanimi\Ders19ClassLibraryKullanimi.csproj", "{3A091B49-76D0-4959-8AAA-B393E92653FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ders19ClassLibraryKullanimi", "Ders19ClassLibraryKullanimi\Ders19ClassLibraryKullanimi.csproj", "{3A091B49-76D0-4959-8AAA-B393E92653FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{E7EA4208-531D-45FD-9270-055A917D47C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "Entities\Entities.csproj", "{E7EA4208-531D-45FD-9270-055A917D47C5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsForms", "WindowsForms\WindowsForms.csproj", "{8E4B4C3D-34DD-4DD3-A5E8-A8CBFF24A3F2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sql", "Sql", "{3BF1A366-85FB-490E-97D7-6BF81A2F6835}"
+	ProjectSection(SolutionItems) = preProject
+		..\SQLEgitim1.sql = ..\SQLEgitim1.sql
+		..\SQLEgitim2.sql = ..\SQLEgitim2.sql
+		..\SQLEgitim3.sql = ..\SQLEgitim3.sql
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
