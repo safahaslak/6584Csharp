@@ -92,8 +92,5 @@
   <ItemGroup>
     <None Include="Resources\Desktop image.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="SQLEgitim1.sql" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -50,6 +50,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sql", "Sql", "{3BF1A366-85F
 		..\SQLEgitim1.sql = ..\SQLEgitim1.sql
 		..\SQLEgitim2.sql = ..\SQLEgitim2.sql
 		..\SQLEgitim3.sql = ..\SQLEgitim3.sql
+		..\SqlEgitim\SQLEgitim4.sql = ..\SqlEgitim\SQLEgitim4.sql
+		..\SqlEgitim\SQLEgitim5.sql = ..\SqlEgitim\SQLEgitim5.sql
 	EndProjectSection
 EndProject
 Global
