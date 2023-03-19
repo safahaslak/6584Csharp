@@ -54,6 +54,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sql", "Sql", "{3BF1A366-85F
 		..\SqlEgitim\SQLEgitim5.sql = ..\SqlEgitim\SQLEgitim5.sql
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsADONet", "WindowsFormsADONet\WindowsFormsADONet.csproj", "{7F57C457-1D98-40AF-A653-5FA037E37FE0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -144,6 +146,10 @@ Global
 		{8E4B4C3D-34DD-4DD3-A5E8-A8CBFF24A3F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E4B4C3D-34DD-4DD3-A5E8-A8CBFF24A3F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E4B4C3D-34DD-4DD3-A5E8-A8CBFF24A3F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F57C457-1D98-40AF-A653-5FA037E37FE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F57C457-1D98-40AF-A653-5FA037E37FE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F57C457-1D98-40AF-A653-5FA037E37FE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F57C457-1D98-40AF-A653-5FA037E37FE0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
