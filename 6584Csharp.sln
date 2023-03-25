@@ -47,6 +47,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsForms", "WindowsForm
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sql", "Sql", "{3BF1A366-85FB-490E-97D7-6BF81A2F6835}"
 	ProjectSection(SolutionItems) = preProject
+		..\instnwnd.sql = ..\instnwnd.sql
 		..\SQLEgitim1.sql = ..\SQLEgitim1.sql
 		..\SQLEgitim2.sql = ..\SQLEgitim2.sql
 		..\SQLEgitim3.sql = ..\SQLEgitim3.sql
