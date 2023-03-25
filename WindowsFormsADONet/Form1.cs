@@ -21,6 +21,9 @@ namespace WindowsFormsADONet
         {
             // dgvUrunler.DataSource = urunDAL.UrunleriGetir();
             dgvUrunler.DataSource = urunDAL.UrunleriDataTableileGetir();
+            dgvUrunler.Columns[1].HeaderText = "Ürün Adı";
+            dgvUrunler.Columns[2].HeaderText = "Ürün Fiyatı";
+            dgvUrunler.Columns[3].HeaderText = "Stok Miktarı";
         }
 
         private void btnEkle_Click(object sender, EventArgs e)
@@ -55,12 +58,30 @@ namespace WindowsFormsADONet
 
         private void dgvUrunler_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            // urun bilgisini direkt data gridviewdan alma:
             // tablodan textboxlara 
-            txtUrunAdi.Text = dgvUrunler.CurrentRow.Cells[1].Value.ToString();  
-            txtUrunFiyati.Text = dgvUrunler.CurrentRow.Cells[2].Value.ToString();
-            txtStokMiktari.Text = dgvUrunler.CurrentRow.Cells[3].Value.ToString();
-            btnGuncelle.Enabled = true;
-            btnSil.Enabled = true;
+            //txtUrunAdi.Text = dgvUrunler.CurrentRow.Cells[1].Value.ToString();  
+            //txtUrunFiyati.Text = dgvUrunler.CurrentRow.Cells[2].Value.ToString();
+            //txtStokMiktari.Text = dgvUrunler.CurrentRow.Cells[3].Value.ToString();
+            
+            try
+            {
+                var id = Convert.ToInt32(dgvUrunler.CurrentRow.Cells[0].Value.ToString()); // geriden seçilen satırda ilk sütundaki id değerini al, int e çevir ve id değişkenine aktar.
+                var urun = urunDAL.Get(Convert.ToInt32(id)); // 1 tane ürün getiren get metodumuza bu id yi gönderiyoruz ki bize o id ile eşleşen ürünü getirsin.
+                if (urun != null)
+                {
+                    txtUrunAdi.Text = urun.UrunAdi;
+                    txtUrunFiyati.Text = urun.UrunFiyati.ToString();
+                    txtStokMiktari.Text = urun.StokMiktari.ToString();
+                }
+                btnGuncelle.Enabled = true;
+                btnSil.Enabled = true;
+            }
+            catch (Exception hata)
+            {
+
+                MessageBox.Show("Hata Oluştu!" + hata.Message);
+            }
 
         }
 
@@ -118,6 +139,11 @@ namespace WindowsFormsADONet
 
                 MessageBox.Show("Hata Oluştu!\n" + hata.Message);
             }
+        }
+
+        private void btnAra_Click(object sender, EventArgs e)
+        {
+            dgvUrunler.DataSource = urunDAL.UrunleriDataTableileGetir(txtAra.Text.Trim());
         }
     }
 }
