@@ -68,15 +68,28 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="anasayfa.html" />
+    <Content Include="CssEgitimi\Css01Giris.html" />
+    <Content Include="CssEgitimi\Css02ArkaPlanlar.html" />
     <Content Include="Global.asax" />
+    <Content Include="Images\Desktop image.png" />
+    <Content Include="Images\google.png" />
     <Content Include="index.html" />
+    <Content Include="Stil.css" />
     <Content Include="Web.config" />
+    <Content Include="WebFormElementleri.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebFormElementleri.aspx.cs">
+      <DependentUpon>WebFormElementleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebFormElementleri.aspx.designer.cs">
+      <DependentUpon>WebFormElementleri.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
