@@ -68,16 +68,20 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="anasayfa.html" />
+    <Content Include="BootstrapEgitimi\Ders01Giris.html" />
     <Content Include="CssEgitimi\Css01Giris.html" />
     <Content Include="CssEgitimi\Css02ArkaPlanlar.html" />
     <Content Include="CssEgitimi\Css03MarginPadding.html" />
     <Content Include="CssEgitimi\Css04GenislikYukseklik.html" />
     <Content Include="CssEgitimi\Css05DisplayOzelligi.html" />
     <Content Include="CssEgitimi\Css06PositionOzelligi.html" />
+    <Content Include="CssEgitimi\Css07FloatOzelligi.html" />
     <Content Include="Global.asax" />
     <Content Include="Images\Desktop image.png" />
     <Content Include="Images\google.png" />
     <Content Include="index.html" />
+    <Content Include="MiniSite\index.html" />
+    <Content Include="MiniSite\stil.css" />
     <Content Include="Stil.css" />
     <Content Include="Web.config" />
     <Content Include="WebFormElementleri.aspx" />
