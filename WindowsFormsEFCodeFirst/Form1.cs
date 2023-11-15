@@ -31,6 +31,7 @@ namespace WindowsFormsEFCodeFirst
                 UrunAdi = txtUrunAdi.Text,
                 UrunFiyati = Convert.ToDecimal(txtUrunFiyati.Text)
             };
+            
             model.Urunler.Add(urun);
             var islemsonucu = model.SaveChanges();
             if (islemsonucu > 0)
@@ -38,7 +39,7 @@ namespace WindowsFormsEFCodeFirst
                 dgvUrunler.DataSource = model.Urunler.ToList();
                 MessageBox.Show("Kayıt Başarılı!");
             }
-;
+;           
         }
 
         private void dgvUrunler_CellClick(object sender, DataGridViewCellEventArgs e)

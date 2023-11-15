@@ -6,7 +6,8 @@
 </head>
 <body>
     Anasayfa
-    1 html sayfasında 1 tane html etiketi olmalıdır. Bu html etiketi ana kapsayıcıdır ve bu etiket içinde 1 tane head tag i ve 1 tane de body tag i olmalıdır. Html elementlerini oluşturan kodlara tag veya etiket deriz.
+    <br />
+    Bir html sayfasında 1 tane html etiketi olmalıdır. Bu html etiketi ana kapsayıcıdır ve bu etiket içinde 1 tane head tag i ve 1 tane de body tag i olmalıdır. Html elementlerini oluşturan kodlara tag veya etiket deriz.
     head alanı web sayfasının genel ayarlarının tutulduğu alandır ve burada kullanıcıya gösterilecek içerikler tanımlanmamalıdır!
     Kullanıcıların göreceği içerikler kesinlikle body tag larının arasında yer almalıdır!
     <br />
@@ -33,6 +34,11 @@
     <div>
         div elementi sayfada bölümler oluşturmak için kullanılır.
     </div>
+    <div>
+        <h3>
+            safa
+        </h3>
+    </div>
     <hr />
     <div>
         hr elementi sayfada yatay çizgi çekilmesini sağlar.
@@ -44,13 +50,15 @@
     <hr />
     <a href="/anasayfa.html">anasayfaya git</a>
     <br />
+    <a href="/anasayfa.html">Anasayfaya git</a>
+    <br />
     <a href="https://www.google.com.tr/?hl=tr">Google a git</a>
     <br />
     <a href="https://www.google.com.tr/?hl=tr" target="_blank">Google a git</a>
-    a elementine target="_blank" attribute(özelliğini) tanımlarsak google ı yeni sekmede açar kullanıcı uygulamamızda kalır.
+    a elementine target="_blank" attribute(özelliğini) tanımlarsak google ı yeni sekmede açar ve kullanıcı uygulamamızda kalır.
     <hr />
     <h3>
-        sayfada resim gösterme
+        Sayfada resim gösterme
     </h3>
     <p>
         web sayfalarında resim göstermek için html img elementi kullanılır.
@@ -67,14 +75,15 @@
     <p>
         Projeye yükledeiğimiz resimleri sürükle bırak yöntemiyle de ekranda gösterebiliriz!
     </p>
-    <img src="Images/Desktop image.png" height="100"/> 
+    <img src="Images/Desktop image.png" height="100" />
     <h3>
         HTML Table Elementi kullanımı.
     </h3>
     <table>
         <tr>
             <td>
-                table elementi ana kapsayıcıdır. table içerisinde satır oluşturmak için öne tr elementi açılıp kapatılır. sütun oluşturmak için tr içine td elementi açılıp kapatılır. 1 satır 1 sütunluk tablo.
+                table elementi ana kapsayıcıdır. table içerisinde satır oluşturmak için önce tr elementi açılıp kapatılır.
+                sütun oluşturmak için tr içine td elementi açılıp kapatılır. 1 satır 1 sütunluk tablo.
             </td>
         </tr>
     </table>
@@ -186,7 +195,7 @@
     <h2>Html de <small>small</small> elementiyle bir yazıyı küçülterek gösterebiliriz.</h2>
     <mark>mark elementi işaretli ve vurgulanmış element oluşturur.</mark>
     <ins>Burası html ins tagı</ins>
-    <p>sub Html elementi ile <sub>alt </sub> çıkıntılı metin yazdırabiliriz</p> 
+    <p>sub Html elementi ile <sub>alt </sub> çıkıntılı metin yazdırabiliriz</p>
     <p>sup Html elementi ile <sup>üst </sup> çıkıntılı metin yazdırabiliriz</p>
 
     <h3>Html listeleme elementleri</h3>
@@ -229,13 +238,18 @@
     <p>
         Sayfa tasarımında bir bölümün başlangıç ve bitiş alanlarını belirlemek için kullanıcının görmeyeceği ama kaynak kodda görünen yorum satırı ekleyebiliriz.
     </p>
-        <!-- Html de kodların arasına kullanıcının görmeyeceği yorum satırı ekleyebiliriz. -->
+
+    <!-- Html de kodların arasına kullanıcının görmeyeceği yorum satırı ekleyebiliriz. -->
     <p>
         Yorum satırının kısa yolu yazıyı yazdıktan sonra yazıyı seçip ctrl + k > ctrl + c
     </p>
     <h3>
+        Post Yöntemi
+    </h3>
+    <h3>
         Fieldset Elementi
     </h3>
+
     <fieldset>
         <legend>Kullanıcı Girişi</legend>
         <form action="/index.html" method="post">
@@ -249,6 +263,7 @@
                 <tr>
                     <td>Şifre : </td>
                     <td>
+                        ""
                         <input type="password" name="txtSifre" value="" />
                     </td>
                 </tr>
@@ -262,10 +277,10 @@
         </form>
     </fieldset>
     <h3>
-        GET Yöntemiyle Form Tetikleme 
+        GET Yöntemiyle Form Tetikleme
     </h3>
     <p>
-        GET metodunda veriler sunucua adres çubuğundan iletilir.
+        GET metodunda veriler sunucuya adres çubuğundan iletilir.
         Bu yönteme QueryString denilir.
         Key Value şeklinde kullanılır.
         Sunucuda da buradan gönderdiğimiz key(ara) in değerini okuduğumuzda bize value gelir böylece bu kelimeyle alakalı ürünleri veritabanından getirtebiliriz mesela.
@@ -277,10 +292,11 @@
     <h3>Form Input-Veri Girişi Elementleri</h3>
 
     <p>
-        Uygulamalarımızda kullanıcılardan veri almamızı sağlar. Kapsayıcı bir form elementine inputlar ekleyerek GET veya POST methodlarından biriyle veri alabiliriz. Form daki action ise form tetiklendiğinde sunucudaki hangi sayfanın veya metodun çalışacağını belirtir. 
+        Uygulamalarımızda kullanıcılardan veri almamızı sağlar. Kapsayıcı bir form elementine inputlar ekleyerek GET veya POST methodlarından biriyle veri alabiliriz. 
+        Form daki action ise form tetiklendiğinde sunucudaki hangi sayfanın veya metodun çalışacağını belirtir.
     </p>
     <form action="/" method="post">
-        <table>
+        <table> 
             <tr>
                 <th>Ürün Adı : </th>
                 <td>
@@ -313,17 +329,17 @@
             <tr>
                 <th>Ürün Açıklaması : </th>
                 <td>
-                    <textarea name="txtUrunAciklamasi" cols="30" rows="10" ></textarea>
+                    <textarea name="txtUrunAciklamasi" cols="30" rows="10"></textarea>
                 </td>
             </tr>
-           <tr>
+            <tr>
                 <th>Durum : </th>
                 <td>
                     <input type="checkbox" name="cbDurum" />
                     <label for="cbDurum">Aktif</label>
                 </td>
             </tr>
-           <tr>
+            <tr>
                 <th>Anasayfa : </th>
                 <td>
                     <input type="radio" name="cbAnasayfa" value="" />
@@ -332,13 +348,13 @@
                     <label for="cbAnasayfa">Gösterme</label>
                 </td>
             </tr>
-           <tr>
-               <td></td>
-               <td>
-                   <button name="btnKaydet" id="btnKaydet" type="submit">Kaydet</button>
-                   <button name="btnReset" id="btnrReset" type="reset">Sıfırlar</button>
-               </td>
-           </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button name="btnKaydet" id="btnKaydet" type="submit">Kaydet</button>
+                    <button name="btnReset" id="btnrReset" type="reset">Sıfırlar</button>
+                </td>
+            </tr>
         </table>
     </form>
 
@@ -350,7 +366,7 @@
     <header>
         header elementi bir web sayfasının en üst bölümünü oluşturmak için kullanılır.
         <nav>
-            nav elementi de içerisinde menü veya sayfa konumlarını barındıran naigasyon elementleridir.
+            nav elementi de içerisinde menü veya sayfa konumlarını barındıran navigasyon elementleridir.
         </nav>
         <nav>
             <ul>
@@ -360,7 +376,7 @@
             </ul>
         </nav>
     </header>
-    
+
     <article>
         article elementi sayfada göstereceğimiz makale tarzı yazıları belirtmek için kullanılabilir.
     </article>
@@ -368,7 +384,7 @@
     <section>
         section elementi div elementine alternatif olarak sayfadaki bölümleri ve sekmeleri göstermek için kullanılabilir.
     </section>
-    
+
     <aside>
         aside elementi genelde yan menüleri barındırmak için kullanılır.
         <ul id="yanMenu">
@@ -385,7 +401,7 @@
     </figure>
 
     <footer>
-        footer elementi ise web sayfaları veya e-ticaret sitelerinde tüm sayfalarda sabit olan sayfanın sen alt kısmını belirtmek için kullanılır.
+        footer elementi ise web sayfaları veya e-ticaret sitelerinde tüm sayfalarda sabit olan sayfanın en alt kısmını belirtmek için kullanılır.
     </footer>
 
 

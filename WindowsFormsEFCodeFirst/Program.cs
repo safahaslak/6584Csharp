@@ -16,7 +16,7 @@ namespace WindowsFormsEFCodeFirst
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new KategoriYonetimi());
+            Application.Run(new KategoriYonetimi());  //Form1 veya KategoriYonetimi
         }
     }
 }
