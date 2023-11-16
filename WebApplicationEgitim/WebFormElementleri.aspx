@@ -25,9 +25,10 @@
                     </td>
                     <td>
                         <asp:DropDownList ID="DropDownList1" runat="server">
-                        <asp:ListItem Value="1">Elektronik</asp:ListItem>
-                        <asp:ListItem Value="2">Bilgisayar</asp:ListItem>
-                        <asp:ListItem Value="3">Telefon</asp:ListItem>
+                        <asp:ListItem Selected="True" Value="0">Seçiniz</asp:ListItem>
+                        <asp:ListItem Value="1">Bilgisayar</asp:ListItem>
+                        <asp:ListItem Value="2">Telefon</asp:ListItem>
+                        <asp:ListItem Value="3">Elektronik</asp:ListItem>
                         </asp:DropDownList>
                     </td>
                     <td></td>
@@ -36,7 +37,7 @@
             <table>
                 <tr>
                     <td>
-                        <asp:FileUpload ID="FileUpload1" runat="server" />
+                        <asp:FileUpload ID="FileUpload1" runat="server" /> <%--Dosya yükleme butonu--%> 
                     </td>
                     <td>
                         <asp:HiddenField ID="HiddenField1" runat="server" />
