@@ -109,6 +109,13 @@
     <Content Include="Images\google.png" />
     <Content Include="Images\light-gray-concrete-wall.jpg" />
     <Content Include="index.html" />
+    <Content Include="JavaScriptEgitimi\Ders07Olaylar.html" />
+    <Content Include="JavaScriptEgitimi\Konu01JavaScriptGiris.html" />
+    <Content Include="JavaScriptEgitimi\Konu02JavascriptOperatorler.html" />
+    <Content Include="JavaScriptEgitimi\Konu03JavascriptKararYapilari.html" />
+    <Content Include="JavaScriptEgitimi\Konu04Donguler.html" />
+    <Content Include="JavaScriptEgitimi\Konu05JavascriptFonksiyonlar.html" />
+    <Content Include="JavaScriptEgitimi\Konu06StringMetotları.html" />
     <Content Include="MiniSite\index.html" />
     <Content Include="MiniSite\stil.css" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -117,6 +124,7 @@
     <Content Include="Scripts\bootstrap.esm.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\OzelJavaScriptDosyasi.js" />
     <Content Include="Stil.css" />
     <Content Include="Web.config" />
     <Content Include="WebFormElementleri.aspx" />

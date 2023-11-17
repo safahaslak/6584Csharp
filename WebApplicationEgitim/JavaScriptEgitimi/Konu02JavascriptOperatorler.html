@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Javascript Operatörler</title>
+</head>
+<body>
+    <h1>Javascript Operatörler</h1>
+    <h2>Aritmetik Operatörleri</h2>
+    <p>
+        Matematiksel hesaplamaları yapmak için kullanabileceğimi
+        toplama, çıkarma, çarpma ve bölme gibi operatörler.
+    </p>
+    <script>
+        let sayi1 = 10, sayi2 = 8;
+        console.warn("Sayı1 : " + sayi1 + " - Sayı2 : " + sayi2);
+        console.log("Sayı1 + Sayı2 = " + sayi1 + sayi2); /*burada string alan ile sayısal alanlar + ile toplandığında
+            javascript bunu toplama işlemi değil birleştirme işlemi olarak algılar.*/
+        console.log("Sayı1 + Sayı2 = " + (sayi1 + sayi2)); /*burada yukarıdaki string birleştirmeden farklı olarak
+            sayi1 + sayi2 yi parantez içine aldığımızdajavascript bu parantez içindeki sayıları toplar sonra string ile birleştirir */
+        console.log("Sayı1 + Sayı2 = ", sayi1 + sayi2); /*burada ise console.log da, kullandığımızdan string metin alanı
+            ayrı sayısal alan ayrı number olarak ele alınır*/
+        console.log("Sayı1 - Sayı2 = ", sayi1 - sayi2);
+        console.log("Sayı1 * Sayı2 = ", sayi1 * sayi2);
+        console.log("Sayı1 / Sayı2 = ", sayi1 / sayi2);
+        console.log("Sayı1 % Sayı2 = ", sayi1 % sayi2);
+    </script>
+    <h2>Atama Operatörleri</h2>
+
+    <p>
+        =, +=, -=, *=, /=, %=
+    </p>
+
+    <script>
+        console.error("Atama Operatörleri");
+        console.log("Sayı1 + Sayı2 = ", sayi1 + sayi2);
+        console.log("Sayı1 - Sayı2 = ", sayi1 - sayi2);
+        console.log("Sayı1 * Sayı2 = ", sayi1 * sayi2);
+        console.log("Sayı1 / Sayı2 = ", sayi1 / sayi2);
+        console.log("Sayı1 % Sayı2 = ", sayi1 % sayi2);
+    </script>
+
+    <h2>Karşılaştırma Operatörleri</h2>
+    <p>
+        == : eşit mi, === : değerler veri tipleriyle birlikte eşit mi, != : eşit değilse,
+        !== değerler ve tipler eşit değilse, > : büyüktür, < : küçüktür, >= : büyük eşittir,
+        <= : küçük eşittir.
+    </p>
+    <hr />
+    <script>
+        console.error("Karşılaştırma Operatörleri");
+        console.warn("Sayı1 : " + sayi1 + " - Sayı2 : " + sayi2);
+        console.log("Sayı1 == Sayı2 = ", sayi1 == sayi2);
+        console.log("Sayı1 === Sayı2 = ", sayi1 === sayi2);
+        console.log("Sayı1 != Sayı2 = ", sayi1 != sayi2);
+        console.log("Sayı1 !== Sayı2 = ", sayi1 !== sayi2);
+        console.log("Sayı1 > Sayı2 = ", sayi1 > sayi2);
+        console.log("Sayı1 < Sayı2 = ", sayi1 < sayi2);
+        console.log("Sayı1 >= Sayı2 = ", sayi1 >= sayi2);
+        console.log("Sayı1 <= Sayı2 = ", sayi1 <= sayi2);
+    </script>
+
+    <h2>Mantıksal Operatörler</h2>
+    <p>
+        &&(and) : ve, ||(or) : veya, ! (not): değil
+    </p>
+</body>
+</html>
