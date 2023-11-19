@@ -101,8 +101,44 @@ kullanıcıya bilgilendirme yapmamızı sağlar. */
     </p>
     <script>
         function sec(s) { //sec metodu dışarıdan bir parametre ile çalışacak, gelen parametreye s ismini verdik.
-            return s.options[s.selectIndex].value 
+            return s.options[s.selectedIndex].value /* s bir select elemanı olacak içindeki options lardan seçili olanın değerini
+            [s.selectedIndex].value ile yakalıyoruz. */
+
         }
     </script>
+
+    <form>
+        <select name="liste" onchange="window.open(sec(this))">
+            <option value="#">Bir arama motoru seçiniz!</option>
+            <option value="https://google.com.tr/">Google</option>  
+            <option value="https://bing.com/">Bing</option>  
+            <option value="https://yahoo.com/">Yahoo</option>  
+            <option value="https://yandex.com.tr/">Yandex</option>  
+        </select>
+    </form>
+    
+    <hr />
+
+    <h2 id="olayBaslik">AddEventListener - Olay Dinleyici</h2>
+    <p id="olayDinleme"></p>
+    <p>
+        JavaScript olay dinleme metoduyla sayfadaki istediğimiz olayı takip edip gerçekleştiğinde işlem yapabiliriz.
+    </p>
+
+    <script>
+        function myfunction() {
+            //document.getElementById("olayDinleme").innerHTML = "AddEventListener çalıştı!"
+            alert("AddEventListener çalıştı!")
+        }
+        document.getElementById("olayBaslik").addEventListener("click", myfunction) /* sayfada id si olayBaslik olan elemana addEventListener metoduyla 
+        tıklama olayı olursa myFunction ı çalıştırması talimatı verdik. */
+
+        function removeHandler() { // olay dinlemeyi devre dışı bırakan metot
+            document.getElementById("olayBaslik").removeEventListener("click", myfunction)
+        }
+                
+    </script>
+    <button onclick="removeHandler()">removeEventListener</button>
+
 </body>
 </html>
