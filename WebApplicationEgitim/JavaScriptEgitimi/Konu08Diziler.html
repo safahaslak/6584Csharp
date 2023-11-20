@@ -9,10 +9,30 @@
     <script>
         var sayilar = [3, 5, 7, 9];
         var toplam = 0;
-        for (var i in sayilar) {
+        for (var i in sayilar) { /* js for döngüsü dizideki elemanların index değerlerine ihtiyac duyarsak 
+            kullanabileceğimiz döngüdür.*/
             toplam += sayilar[i]
-            document.write("i nin değeri : ", i)
+            document.write("i nin değeri : ", i ,"-", sayilar[i], "<hr/>")
         }   
+        document.write("toplam ın değeri : ", toplam, "<hr/>")
+
+        for (var i of sayilar) { /* js of döngüsü c# taki foreach gibi çalışır, dizideki elemanları direkt
+            ekrana yazdırmak için. */
+            document.write("i : ", i, "<hr/>")
+        }
+        var arabalar = ["Fiat", "Peugot", "Ferrari"];
+        let arac = arabalar[1];
+        document.write("<h3>Seçilen araç : ", arac, "</h3>");
+
+        var meyveler = new Array("Elma", "Armut", "Kiraz");
+
+        for (var i in meyveler) {
+            document.write("Listedeki ilk meyve : ", meyveler[i] + "<hr/>")
+        }
+
+        for (var meyve of meyveler) {
+            document.write(meyve.toUpperCase().bold() + "<hr/>")
+        }
     </script>
 </body>
 </html>
