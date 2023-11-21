@@ -1,0 +1,1 @@
+﻿document.write("<h3>Bu yazı script dosyasından özel olarak geldi!</h3>")
