@@ -121,6 +121,8 @@
     <Content Include="JavaScriptEgitimi\Konu09Seciciler.html" />
     <Content Include="JavaScriptEgitimi\Konu10JquerySeciciler.html" />
     <Content Include="JavaScriptEgitimi\Konu11JqueryHtml.html" />
+    <Content Include="JavaScriptEgitimi\Konu12Jquery-Css.html" />
+    <Content Include="JavaScriptEgitimi\Konu13Jquery-DOM.html" />
     <Content Include="MiniSite\index.html" />
     <Content Include="MiniSite\stil.css" />
     <Content Include="Scripts\bootstrap.bundle.js" />
