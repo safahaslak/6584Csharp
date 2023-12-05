@@ -1,0 +1,112 @@
+﻿
+@{
+    ViewBag.Title = "MVC02 Html Helpers";
+}
+
+<h2>MVC02 Html Helpers</h2>
+
+<p>
+    Mvc de ekrana html elementleri oluşturmak için kullanılan hazır bir yapıdır.
+</p>
+
+@Html.ActionLink("Anasayfa", "Index")  @*Bu razor syntax da controller olmadığı için belirtilen yere gitmez*@
+
+@Html.ActionLink("Anasayfa", "Index", "Home") @*Burada ise home controller belirtildiği için anasayfaya gider*@
+
+@Html.ActionLink("Hakkımızda", "About", "Home")
+
+@Html.ActionLink("İletişim", "Contact", "Home")
+
+@Html.ActionLink("MVC 01 Razor Syntax", "Index", "MVC01RazorSyntax")
+
+<a href="/MVC01RazorSyntax">MVC 01 Razor Syntax</a> @*Yukarıdakilerin hepsi aslında a elementinin href attribute ü.*@
+
+<h4>Html Checkbox</h4>
+
+@Html.CheckBox("Onay") Onaylıyorum.
+
+<h4>Html TextBox</h4>
+
+@Html.TextBox("txtAd") Ekranda veri giriş kutusu (input) oluşturur.
+
+<input type="text" name="txtName" value="" />
+
+<h3>Html Hidden</h3>
+
+@Html.Hidden("hfGizliElement", "ekranda kullanıcının görmeyeceği değer saklamak için")
+
+<p>
+    ekranda kullanıcının görmeyeceği değer saklamak için
+</p>
+
+<h3>Html Label</h3>
+
+@Html.Label("lblAd", "Html Label Elementi")
+
+<h3>Html TextArea - Çok satırlı input</h3>
+
+@Html.TextArea("txtAdres", "Html TextArea - Çok satırlı input")
+
+<h3>Html Password</h3>
+
+@Html.Password("txtPassword")
+
+<hr />
+
+<h3>Html Helper ile Form Oluşturma</h3>
+
+@using (Html.BeginForm())
+ {
+    <h4>Kullanıcı Adı: </h4>
+    @Html.Editor("txtKullaniciAdi")
+    <h4>Şifre: </h4>
+    @Html.Editor("txtSifre")
+    <br />
+    <input type="submit" value="Giriş" />
+ }
+<hr />
+<form action="/MVC02HtmlHelpers" method="get"> @*post metodu sayfanın içerisinde gömülü olarak bulunur gizli bir şekilde sunucuya verileri getirir, get metodu ise açık bir şekilde -tarayıcıdan- veri getirir zaten adres çubuğunda da görülür.*@
+    @Html.Editor("txtAra")
+</form>
+@*güvenlik gerektiren işlemler de ise post metodu kullanılır.*@
+
+<hr />
+
+<h3>Html Listbox ve dropdownlist Kullanımı</h3>
+@{
+    SelectListItem[] liste = new SelectListItem[] {
+        new SelectListItem() { Text = "Bilgisayar"},
+        new SelectListItem() { Text = "Elektronik"},
+        new SelectListItem() { Text = "Telefon"},
+    };
+    string HtmlRawOrnek = "Html Raw ile Ekrana <b>Html İçerik</b> Yazdırma";
+}
+
+<h6>Listbox</h6>
+@Html.ListBox("lbListe",liste)
+<h6>Dropdownlist</h6>
+@Html.DropDownList("ddlListe", liste)
+
+<hr />
+
+<h3>RadioButton Elementi</h3>
+
+@Html.RadioButton("rbOnay", "Onaylıyorum") Sözleşmeyi Onaylıyorum
+
+<h3>Html Raw ile Ekrana Html İçerik Yazdırma</h3>
+
+@HtmlRawOrnek
+
+<hr />
+
+@Html.Raw(HtmlRawOrnek)
+
+<hr />
+
+@Html.Raw("Html Raw ile Ekrana <b style='color:red'>Html İçerik</b> Yazdırma")
+
+
+
+
+
+
