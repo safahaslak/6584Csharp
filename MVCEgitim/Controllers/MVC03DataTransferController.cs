@@ -26,8 +26,25 @@ namespace MVCEgitim.Controllers
 
             return View();
         }
-        public ActionResult Index(string text1, string )
+        [HttpPost] // aşağıdaki index metodunun sayfadaki post işleminden sonra çalışması gerektiğini bu attribute ile belirliyoruz.
+        public ActionResult Index(string text1, string ddlListe, bool cbOnay, FormCollection formCollection)
+            // formCollection nesnesi ekrandaki
         {
+            // 1. Yöntem parametrelerden gelen veriler
+            ViewBag.Mesaj = "textbox dan gelen veri: " + text1;
+            ViewBag.MesajListe = "dropdpwnlist den gelen veri: " + ddlListe;
+            TempData["Tdata"] = "checkbox dan seçilen değer: " + cbOnay;
+            
+            // 2. Yöntem formCollection dan gelen veriler
+            ViewBag.Mesaj2 = "textbox dan gelen veri: " + formCollection["text1"];
+            ViewBag.MesajListe2 = "dropdpwnlist den gelen veri: " + formCollection["ddlListe"];
+            TempData["Tdata2"] = "checkbox dan seçilen değer: " + formCollection.GetValues("cbOnay")[0]; // checkbox için
+            
+            // 3. Yöntem Request Form dan gelen veriler
+            ViewBag.Mesaj3 = "textbox dan gelen veri: " + Request.Form["text1"];
+            ViewBag.MesajListe3 = "dropdpwnlist den gelen veri: " + Request.Form["ddlListe"];
+            TempData["Tdata3"] = "checkbox dan seçilen değer: " + Request.Form.GetValues("cbOnay")[0]; // checkbox için 
+            
             return View();
         }
     }
