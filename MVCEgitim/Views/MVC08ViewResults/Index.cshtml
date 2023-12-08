@@ -1,0 +1,66 @@
+﻿
+@{
+    ViewBag.Title = "MVC View Results Çeşitleri";
+}
+
+<h2>MVC View Results Çeşitleri</h2>
+
+<p>
+    MVC de Controller da kullandığımız ActionResult metotları sadece tek bir işlev görmez, birden fazla işlem yapar. Bunlar;
+
+</p>
+
+<h4>Controllerdaki FarklıViewDondur metodunu çalıştırma</h4>
+
+@Html.ActionLink("MVC View Results Çeşitleri", "Index")
+
+<hr />
+
+@Html.ActionLink("Farkli View Dondur", "FarkliViewDondur") @*ilk parametre normal yazı, ikinci parametre ise hangi actionlink metoduysa onun ismi.*@
+
+<hr />
+
+@Html.ActionLink("Yönlendir", "Yonlendir")
+
+<hr />
+
+@Html.ActionLink("Action'a Yönlendir", "ActionaYonlendir")
+
+<hr />
+
+@Html.ActionLink("Route Yönlendir", "RouteYonlendir")
+
+<hr />
+
+@Html.ActionLink("Kategorileri Getir Partial", "KategorileriGetirPartial")
+
+<hr />
+
+@Html.Action("KategorileriGetirPartial")  @*Action ile direkt Shared klasörünün içindeki _Partialmenu yu ekrana getirir.*@
+
+<hr />
+
+@Html.Action("KategorileriModelleGetir")
+
+<hr />
+
+@Html.ActionLink("JsResult", "JsResult")
+
+@*<script src="/MVC08ViewResults/JsResult"></script>*@
+
+<hr />
+
+@Html.ActionLink("Json Result", "JsonResult") 
+
+<hr />
+
+@Html.ActionLink("Xml Content Result", "XmlContentResult")  
+
+
+
+
+
+
+
+
+
