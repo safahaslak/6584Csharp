@@ -22,6 +22,16 @@
 </p>
 
 @Html.ActionLink("Cookie Oluştur", "CookieOlustur")
+@Html.Raw(TempData["mesaj"]) @*html.raw metodu tempdata nın içerisindeki html elementini normal metin değilde html elementi olarak gösterir.*@
+
+<hr />
+
+@Html.ActionLink("Cookie Oku", "CookieOku")
+
+<hr />
+
+@Html.ActionLink("Cookie Sil", "CookieSil")
+@Html.Raw(TempData["mesaj2"])
 
 
 
