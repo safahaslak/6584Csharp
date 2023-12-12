@@ -27,5 +27,35 @@ namespace MVCEgitim.Controllers
             }
             return View("Index");
         }
+        public ActionResult SessionOku()
+        {
+            if (Session["deger"] != null)
+            {
+                TempData["mesaj"] = $"<div class='alert alert-success'>Hoşgeldin {Session["deger"]}</div>";
+            }
+            else
+            {
+                TempData["mesaj"] = "<div class='alert alert-danger'>Giriş Yapılmamış!</div>";
+            }
+            return View();
+        }
+        public ActionResult SessionSil()
+        {
+            if (Session["deger"] != null)
+            {
+                //Session["deger"] = null;
+                HttpContext.Session.Remove("deger"); 
+            }
+
+            return RedirectToAction("Index");
+        }
+        public ActionResult KullaniciEkrani()
+        {
+            if (Session["deger"] == null)
+            {
+                return RedirectToAction("Index");
+            }
+            return View();
+        }
     }
 }

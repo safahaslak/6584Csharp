@@ -12,11 +12,11 @@
 
 <h3>Session Oluştur</h3>
 
-@if (HttpContext.Current.Session["username"] != null)
-{
+@if (HttpContext.Current.Session["deger"] != null)
+ {
     <p>Hoşgeldin <b>@HttpContext.Current.Session["deger"]</b></p>
-    
-}
+    <a class="btn btn-danger" href="/MVC11Sessions/SessionSil">Oturumu Kapat</a>
+ }
 else
 {
     <form action="/MVC11Sessions/SessionOlustur" method="post">
@@ -28,4 +28,11 @@ else
 }
 
 @Html.Raw(TempData["mesaj"])
+
+<a href="//MVC11Sessions/SessionOku">Session Oku</a>
+
+
+
+
+
 
